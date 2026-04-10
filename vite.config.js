@@ -2,23 +2,16 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import { readFileSync } from "fs";
 
-// Plugin to serve inex.html (PHP template) as plain HTML for dev preview
-function phpTemplatePlugin() {
+// Plugin to serve index.html with HMR support for dev
+function devHtmlPlugin() {
   return {
-    name: "php-template",
+    name: "dev-html",
     configureServer(server) {
-      // Watch inex.html for changes
-      server.watcher.add(resolve(__dirname, "inex.html"));
+      server.watcher.add(resolve(__dirname, "index.html"));
 
       server.middlewares.use((req, res, next) => {
         if (req.url === "/" || req.url === "/index.html") {
-          let html = readFileSync(resolve(__dirname, "inex.html"), "utf-8");
-
-          // Strip PHP tags and replace PHP variables
-          html = html.replace(/<\?php[\s\S]*?\?>/g, "");
-          html = html.replace(/<\?=\s*\$assets\s*\?>/g, "assets/");
-          html = html.replace(/<\?=\s*\$cta_url\s*\?>/g, "#");
-          html = html.replace(/<\?=\s*\$site_url\s*\?>/g, "#");
+          let html = readFileSync(resolve(__dirname, "index.html"), "utf-8");
 
           // Inject Vite client for HMR
           html = html.replace(
@@ -43,9 +36,8 @@ function phpTemplatePlugin() {
         next();
       });
     },
-    // Reload browser when inex.html changes
     handleHotUpdate({ file, server }) {
-      if (file.endsWith("inex.html")) {
+      if (file.endsWith("index.html")) {
         server.ws.send({ type: "full-reload" });
         return [];
       }
@@ -82,7 +74,7 @@ function skipFontsPlugin() {
 
 export default defineConfig({
   base: "./",
-  plugins: [phpTemplatePlugin(), skipFontsPlugin()],
+  plugins: [devHtmlPlugin(), skipFontsPlugin()],
   server: {
     open: true,
     watch: {
