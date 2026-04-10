@@ -8,10 +8,6 @@
   .test-nav{
     display: flex;
     flex-direction: column;
-    @include md-up {
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
   .btns-wrp{
     @include md-up{
@@ -226,9 +222,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    @include md-up{
-      justify-content: flex-end;
-    }
      .btn{
        color: #002989;
      }
