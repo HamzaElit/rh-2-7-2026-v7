@@ -1,6 +1,7 @@
 {
   "name": "rh-2-7-2026-v7",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
