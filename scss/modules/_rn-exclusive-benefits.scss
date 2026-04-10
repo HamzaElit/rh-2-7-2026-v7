@@ -1,0 +1,261 @@
+@import "../mixins/mixins-master";
+
+.rn-exclusive-benefits {
+  padding-block: var(--block-gap);
+  background-color: var(--Light-Blue);
+
+  // ── Title ──────────────────────────────────────────────────────────────────
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--Black);
+    margin-bottom: 2.4rem;
+
+    @include md-up {
+      font-size: 3.2rem;
+      margin-bottom: 3.2rem;
+    }
+
+    @include lg-up {
+      font-size: 4rem;
+    }
+
+    em {
+      font-style: italic;
+      color: var(--Primary);
+    }
+  }
+
+  // ── TABS LAYOUT (md-up) ────────────────────────────────────────────────────
+  &__layout {
+    display: none;
+
+    @include md-up {
+      display: flex;
+      gap: 1.6rem;
+      align-items: flex-start;
+    }
+
+    @include lg-up {
+      gap: 3.2rem;
+    }
+  }
+
+  &__tabs-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    flex-shrink: 0;
+    flex: 0 0 50%;
+    @include lg-up {
+      flex: 0 0 41%;
+      width: 56.8rem;
+    }
+  }
+
+  &__tab {
+    width: 100%;
+    text-align: left;
+    padding: 1.2rem 2rem;
+    font-family: var(--font-text);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--Black);
+    background-color: transparent;
+    border: 1px solid var(--Black);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+
+    @include lg-up {
+      font-size: 2.2rem;
+    }
+
+    &.active {
+      background-color: var(--Black);
+      color: var(--Light-Blue);
+      border-color: var(--Black);
+    }
+
+    @include hover {
+      background-color: var(--Black);
+      color: var(--Light-Blue);
+    }
+  }
+
+  // ── Panels ─────────────────────────────────────────────────────────────────
+  &__panels {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  &__panel {
+    display: none;
+    background-color: var(--Black);
+    border-radius: 2rem;
+    overflow: hidden;
+    animation: ebFadeIn 0.35s ease;
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+
+      @include lg-up {
+        align-items: center;
+        gap: 3.2rem;
+        padding: 3.2rem;
+      }
+      @include xl-up {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__panel-img {
+    width: 100%;
+    padding: 1.6rem 1.6rem 0;
+
+    @include lg-up {
+        padding: 0;
+      width: auto;
+      flex-shrink: 0;
+      flex: 0 0 48%;
+      border-radius: 1.2rem;
+      overflow: hidden;
+    }
+
+    picture {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+
+      @include lg-up {
+        border-radius: 1.2rem;
+        aspect-ratio: 318 / 360;
+        object-position: center;
+      }
+    }
+  }
+
+  &__panel-text {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    @include lg-up {
+      padding: 0;
+      gap: 1.6rem;
+      flex: 1 1 0;
+    }
+  }
+
+  &__panel-headline {
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--Secondary);
+
+    @include lg-up {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__panel-body {
+    font-family: var(--font-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--White);
+
+    @include lg-up {
+      font-size: 1.8rem;
+    }
+  }
+
+  // ── ACCORDION LAYOUT (mobile only) ────────────────────────────────────────
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include md-up {
+      display: none;
+    }
+  }
+
+  &__acc-item {
+    background-color: var(--Black);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  &__acc-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 1.6rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-text);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--Light-Blue);
+    text-align: left;
+  }
+
+  &__acc-icon {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    color: var(--Light-Blue);
+    transition: transform 0.3s ease;
+  }
+
+  &__acc-body {
+    display: none;
+    padding: 0 1.6rem 1.6rem;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    picture {
+      display: block;
+      border-radius: 1rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  // Open state
+  &__acc-item.active {
+    .rn-exclusive-benefits__acc-icon {
+      transform: rotate(180deg);
+    }
+
+    .rn-exclusive-benefits__acc-body {
+      display: flex;
+    }
+  }
+}
+
+@keyframes ebFadeIn {
+  from { opacity: 0; transform: translateY(0.6rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}

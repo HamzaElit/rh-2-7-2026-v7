@@ -1,0 +1,1130 @@
+<?php
+/* Template Name: template-01-2026 [v-05] */
+$assets = get_template_directory_uri() . '/lp-templates-2026/assets/';
+$site_url = 'https://lp.rhinomedica.de/';
+$cta_url='https://lp.rhinomedica.de/rn-calc/';
+?>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+    <?php wp_head(); ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="rn-header">
+      <div class="container">
+        <img
+          class="rn-header__logo"
+          src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/logo-1.svg"
+          alt="logo"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="rn-hero">
+        <div class="rn-hero__image-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/images/hero-desktop.webp"
+            />
+            <img
+              src="assets/images/hero-mobile.webp"
+              alt="Rhinoplastik Ergebnis – natürliche Nasenkorrektur"
+              class="rn-hero__image"
+            />
+          </picture>
+          <div class="rn-hero__sticker">
+            <img
+              src="assets/images/sticker.svg"
+              alt="Angebot in 2 min anfordern!"
+            />
+          </div>
+        </div>
+        <div class="rn-hero__container container">
+          <div class="rn-hero__content">
+            <h1 class="rn-hero__title">
+              Deine <em class="highlight-italic">Nasenkorrektur,</em><br />
+              gemeinsam mit Dir geplant
+            </h1>
+            <div class="rn-hero__info">
+              <p class="rn-hero__subtitle">
+                In nur <strong class="highlight-peach">7 Tagen</strong> zu
+                Deiner Wunschnase <strong>in Istanbul</strong>
+              </p>
+              <div class="rn-hero__btn-item">
+                <button
+                  class="btn btn--hero"
+                  onclick="window.location.href = '<?= $cta_url ?>'"
+                >
+                  ANGEBOT ANFORDERN
+                </button>
+                <span class="rn-hero__btn-note"
+                  >(kostenlos &amp; unverbindlich)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / rn-hero -->
+
+      <section class="rn-app-review">
+        <div class="rn-app-review__container container">
+          <div class="rn-app-review__features">
+            <div class="rn-app-review__feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z" fill="#1344B5"/>
+</svg>
+
+                <path d="M256 16L18 256l238 240l238-240L256 16z" />
+              </svg>
+              <p class="rn-app-review__feature-text">
+                Ästhetik und Funktion vereint
+              </p>
+            </div>
+            <div class="rn-app-review__feature-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z"
+                  fill="#1344B5"
+                />
+              </svg>
+
+              <p class="rn-app-review__feature-text">
+                3D-Simulation vor der OP
+              </p>
+            </div>
+            <div class="rn-app-review__feature-item">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z" fill="#1344B5"/>
+              </svg>
+
+              <p class="rn-app-review__feature-text">
+                Schnellere Heilung durch Ultraschall-Piezo-Technik
+              </p>
+            </div>
+            <div class="rn-app-review__feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z" fill="#1344B5"/>
+              </svg>
+              <p class="rn-app-review__feature-text">
+                Flexible Ratenzahlung möglich
+              </p>
+            </div>
+          </div>
+
+          <div class="rn-app-review__info">
+            <div class="rn-app-review__badge">
+              <img
+                src="assets/images/uber.png"
+                alt="Über 7.000 erfolgreiche Behandlungen"
+                class="rn-app-review__badge-img"
+              />
+              <p class="rn-app-review__badge-text">
+                Über <strong>7.000</strong> erfolgreiche Behandlungen
+              </p>
+            </div>
+
+            <div class="rn-app-review__platforms">
+              <div
+                class="rn-app-review__platform rn-app-review__platform--desktop-only"
+              >
+                <img
+                  src="assets/images/Turkey.webp"
+                  alt="Turkey"
+                  class="rn-app-review__platform-img rn-app-review__platform-img--turkey"
+                />
+              </div>
+              <div
+                class="rn-app-review__platform rn-app-review__platform--desktop-only"
+              >
+                <img
+                  src="assets/images/iso.png"
+                  alt="ISO"
+                  class="rn-app-review__platform-img rn-app-review__platform-img--iso"
+                />
+              </div>
+              <div
+                class="rn-app-review__platform rn-app-review__platform--desktop-only"
+              >
+                <img
+                  src="assets/images/tuv.svg"
+                  alt="Tuv"
+                  class="rn-app-review__platform-img rn-app-review__platform-img--tuv"
+                />
+              </div>
+              <div class="rn-app-review__platform">
+                <img
+                  src="assets/images/Google.svg"
+                  alt="Google 5.0 Rating"
+                  class="rn-app-review__platform-img rn-app-review__platform-img--google"
+                />
+              </div>
+              <div class="rn-app-review__platform">
+                <img
+                  src="assets/images/Trustpilot.svg"
+                  alt="Trustpilot 4.7 Rating"
+                  class="rn-app-review__platform-img rn-app-review__platform-img--trustpilot"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rn-before-after-tab">
+        <div class="container rn-before-after-tab__container">
+          <div class="rn-before-after-tab__header">
+            <h2 class="rn-before-after-tab__title">
+              <em class="highlight-brown">Eine Nase,</em> die wirklich zu dir passt
+            </h2>
+            <p class="rn-before-after-tab__subtitle">
+              Natürlich, auffällig oder etwas dazwischen - wir planen deine Nase nach deinen Wünschen.
+            </p>
+          </div>
+          
+          <div class="rn-before-after-tab__tabs-wrapper">
+            <div class="rn-before-after-tab__tabs-nav">
+              <button class="rn-before-after-tab__tab-btn active" data-type="woman">Weiblich</button>
+              <button class="rn-before-after-tab__tab-btn" data-type="man">Männlich</button>
+            </div>
+            
+            <div class="rn-before-after-tab__panels">
+              <!-- Woman Panel -->
+              <div class="rn-before-after-tab__panel active" data-type="woman">
+                <div class="rn-before-after-tab__grid">
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Gerade Linie</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/w-GeradeLinie-1.webp" alt="Weiblich Gerade Linie Vorher">
+                      <img loading="lazy" src="assets/images/w-GeradeLinie-2.webp" alt="Weiblich Gerade Linie Nachher">
+                    </div>
+                  </div>
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Deutlich angehobene Spitze</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/w-DeutlichangehobeneSpitze-1.webp" alt="Weiblich Deutlich angehobene Spitze Vorher">
+                      <img loading="lazy" src="assets/images/w-DeutlichangehobeneSpitze-2.webp" alt="Weiblich Deutlich angehobene Spitze Nachher">
+                    </div>
+                  </div>
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Leichter Schwung</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/w-LeichterSchwung-1.webp" alt="Weiblich Leichter Schwung Vorher">
+                      <img loading="lazy" src="assets/images/w-LeichterSchwung-2.webp" alt="Weiblich Leichter Schwung Nachher">
+                    </div>
+                  </div>
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Revision</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/w-Revision-1.webp" alt="Weiblich Revision Vorher">
+                      <img loading="lazy" src="assets/images/w-Revision-2.webp" alt="Weiblich Revision Nachher">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Man Panel -->
+              <div class="rn-before-after-tab__panel" data-type="man">
+                <div class="rn-before-after-tab__grid">
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Breite Nase</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/m-Breite Nase-1.webp" alt="Männlich Breite Nase Vorher">
+                      <img loading="lazy" src="assets/images/m-Breite Nase-2.webp" alt="Männlich Breite Nase Nachher">
+                    </div>
+                  </div>
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Gerade Linie</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/m-Gerade Linie-1.webp" alt="Männlich Gerade Linie Vorher">
+                      <img loading="lazy" src="assets/images/m-Gerade Linie-2.webp" alt="Männlich Gerade Linie Nachher">
+                    </div>
+                  </div>
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Leichter Schwung</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/m-Leichter Schwung-1.webp" alt="Männlich Leichter Schwung Vorher">
+                      <img loading="lazy" src="assets/images/m-Leichter Schwung-2.webp" alt="Männlich Leichter Schwung Nachher">
+                    </div>
+                  </div>
+                  <div class="rn-before-after-tab__item">
+                    <h3 class="rn-before-after-tab__item-title">Revision</h3>
+                    <div class="rn-before-after-tab__images">
+                      <img loading="lazy" src="assets/images/m-Revision-1.webp" alt="Männlich Revision Vorher">
+                      <img loading="lazy" src="assets/images/m-Revision-2.webp" alt="Männlich Revision Nachher">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="btns-wrp rn-before-after-tab__cta">
+              <div class="rn-before-after-tab__btn-item btn-item">
+                <a href="<?= $cta_url ?>" class="btn btn--black">
+                  Angebot anfordern
+                </a>
+                <span class="rn-before-after-tab__btn-note">( kostenlos & unverbindlich )</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- before after slider tab end -->
+
+      <section class="rn-promo-banner">
+        <div class="container">
+          <div class="rn-promo-banner__inner">
+            <h2 class="rn-promo-banner__title">Gut aussehen und frei atmen</h2>
+            <div class="rn-promo-banner__features">
+              <div class="rn-promo-banner__feature-item">
+                <svg class="rn-promo-banner__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z" fill="#1344B5"></path>
+                  </svg>
+                <p>Behandlung ausschließlich durch HNO-Ärzte</p>
+              </div>
+              <div class="rn-promo-banner__feature-item">
+                <svg class="rn-promo-banner__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z" fill="#1344B5"></path>
+                  </svg>
+                <p>Ästhetik und Funktion werden gemeinsam geplant</p>
+              </div>
+              <div class="rn-promo-banner__feature-item">
+                <svg class="rn-promo-banner__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.2387 12.0004C17.0044 13.9804 13.8042 17.9484 12 22.537C10.1958 17.9484 6.99607 13.9804 3.76123 12.0004C6.99561 10.0204 10.1958 6.05246 12 1.46387C13.8042 6.05246 17.0039 10.0204 20.2387 12.0004Z" fill="#1344B5"></path>
+                  </svg>
+                <p>96 % unserer Patientinnen berichten von besserer Atmung</p>
+              </div>
+            </div>
+            <div class="rn-promo-banner__cta btns-wrp">
+              <div class="btn-item">
+                <a href="<?= $cta_url ?>" class="btn">
+                  Angebot anfordern
+                </a>
+                <span>( kostenlos &amp; unverbindlich )</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rn-testimonials">
+        <div class="rn-testimonials__container container">
+          <div class="rn-testimonials__header">
+            <h2 class="rn-testimonials__title">Du stehst im Mittelpunkt</h2>
+            <p class="rn-testimonials__subtitle">
+              Warum Patienten Rhinomedica empfehlen
+            </p>
+          </div>
+          <div class="rn-testimonials__slider embla em__threeColumns-02">
+            <div class="embla__viewport">
+              <div class="embla__container">
+                <div class="embla__slide">
+                  <div
+                    class="rn-testimonials__card rn-custom-vimeo"
+                    data-vimeo-id="1152194475"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rn-testimonials__poster"
+                      src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/cover2.webp"
+                      alt="Faisal"
+                    />
+                    <div class="rn-testimonials__play-btn">
+                      <img
+                        src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/play-icon.svg"
+                        alt="Play"
+                      />
+                    </div>
+
+                    <div class="rn-custom-vimeo__iframe-wrp"></div>
+                  </div>
+                </div>
+                <div class="embla__slide">
+                  <div
+                    class="rn-testimonials__card rn-custom-vimeo"
+                    data-vimeo-id="1151596491"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rn-testimonials__poster"
+                      src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/cover6.webp"
+                      alt="Belal"
+                    />
+                    <div class="rn-testimonials__play-btn">
+                      <img
+                        src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/play-icon.svg"
+                        alt="Play"
+                      />
+                    </div>
+
+                    <div class="rn-custom-vimeo__iframe-wrp"></div>
+                  </div>
+                </div>
+                <div class="embla__slide">
+                  <div
+                    class="rn-testimonials__card rn-custom-vimeo"
+                    data-vimeo-id="1152194308"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rn-testimonials__poster"
+                      src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/cover8.webp"
+                      alt="Wassim"
+                    />
+                    <div class="rn-testimonials__play-btn">
+                      <img
+                        src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/play-icon.svg"
+                        alt="Play"
+                      />
+                    </div>
+
+                    <div class="rn-custom-vimeo__iframe-wrp"></div>
+                  </div>
+                </div>
+                <div class="embla__slide">
+                  <div
+                    class="rn-testimonials__card rn-custom-vimeo"
+                    data-vimeo-id="1151596631"
+                  >
+                    <img
+                      loading="lazy"
+                      class="rn-testimonials__poster"
+                      src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/cover4.webp"
+                      alt="Leander"
+                    />
+                    <div class="rn-testimonials__play-btn">
+                      <img
+                        src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/play-icon.svg"
+                        alt="Play"
+                      />
+                    </div>
+
+                    <div class="rn-custom-vimeo__iframe-wrp"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="test-nav">
+              <div class="embla__buttons">
+                <button class="embla__button embla__arrow--prev" type="button">
+                  <svg
+                    width="52"
+                    height="24"
+                    viewBox="0 0 52 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="desktop"
+                  >
+                    <path
+                      d="M0.47792 10.7992C-0.155594 11.4327 -0.155594 12.4599 0.477921 13.0934L10.8016 23.4171C11.4351 24.0506 12.4623 24.0506 13.0958 23.4171C13.7293 22.7836 13.7293 21.7564 13.0958 21.1229L3.91916 11.9463L13.0958 2.76966C13.7293 2.13615 13.7293 1.10902 13.0958 0.475504C12.4623 -0.158009 11.4351 -0.158009 10.8016 0.475505L0.47792 10.7992ZM51.625 11.9463L51.625 10.3241L1.625 10.3241L1.625 11.9463L1.625 13.5685L51.625 13.5685L51.625 11.9463Z"
+                      fill="#FFF5EB"
+                    />
+                  </svg>
+                  <svg
+                    width="20"
+                    height="15"
+                    viewBox="0 0 20 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mobile"
+                  >
+                    <path
+                      d="M0.292892 6.65715C-0.0976315 7.04768 -0.0976314 7.68084 0.292892 8.07137L6.65686 14.4353C7.04738 14.8259 7.68054 14.8259 8.07107 14.4353C8.46159 14.0448 8.46159 13.4116 8.07107 13.0211L2.41421 7.36426L8.07107 1.7074C8.46159 1.31688 8.46159 0.683715 8.07107 0.293191C7.68054 -0.0973336 7.04738 -0.0973336 6.65685 0.293191L0.292892 6.65715ZM20 7.36426L20 6.36426L1 6.36426L1 7.36426L1 8.36426L20 8.36426L20 7.36426Z"
+                      fill="#F0F7FF"
+                    />
+                  </svg>
+                </button>
+                <button class="embla__button embla__arrow--next" type="button">
+                  <svg
+                    width="52"
+                    height="24"
+                    viewBox="0 0 52 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="desktop"
+                  >
+                    <path
+                      d="M51.1471 10.7992C51.7806 11.4327 51.7806 12.4599 51.1471 13.0934L40.8234 23.4171C40.1899 24.0506 39.1627 24.0506 38.5292 23.4171C37.8957 22.7836 37.8957 21.7564 38.5292 21.1229L47.7058 11.9463L38.5292 2.76966C37.8957 2.13615 37.8957 1.10902 38.5292 0.475504C39.1627 -0.158009 40.1899 -0.158009 40.8234 0.475505L51.1471 10.7992ZM0 11.9463L1.00229e-07 10.3241L50 10.3241L50 11.9463L50 13.5685L-1.00229e-07 13.5685L0 11.9463Z"
+                      fill="#FFF5EB"
+                    />
+                  </svg>
+                  <svg
+                    width="20"
+                    height="15"
+                    viewBox="0 0 20 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mobile"
+                  >
+                    <path
+                      d="M19.7071 6.65715C20.0976 7.04768 20.0976 7.68084 19.7071 8.07137L13.3431 14.4353C12.9526 14.8259 12.3195 14.8259 11.9289 14.4353C11.5384 14.0448 11.5384 13.4116 11.9289 13.0211L17.5858 7.36426L11.9289 1.7074C11.5384 1.31688 11.5384 0.683715 11.9289 0.293191C12.3195 -0.0973336 12.9526 -0.0973336 13.3431 0.293191L19.7071 6.65715ZM0 7.36426L6.17854e-08 6.36426L19 6.36426L19 7.36426L19 8.36426L-6.17854e-08 8.36426L0 7.36426Z"
+                      fill="#F0F7FF"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="btns-wrp">
+                <div class="btn-item">
+                  <a href="<?= $cta_url ?>" class="btn btn--secondary"
+                    >Angebot anfordern
+                  </a>
+                  <span> ( kostenlos & unverbindlich ) </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rn-exclusive-benefits">
+        <div class="container">
+
+          <h2 class="rn-exclusive-benefits__title">
+            Deine Vorteile <em>nur</em> bei Rhinomedica
+          </h2>
+
+          <!-- TABS layout (md-up) -->
+          <div class="rn-exclusive-benefits__layout">
+
+            <!-- Left: tab buttons -->
+            <div class="rn-exclusive-benefits__tabs-nav">
+              <button class="rn-exclusive-benefits__tab active" data-tab="alltagstauglich">Sofort wieder Alltagstauglich</button>
+              <button class="rn-exclusive-benefits__tab" data-tab="atmung">Atmung first</button>
+              <button class="rn-exclusive-benefits__tab" data-tab="arzt">Besprich gemeinsam mit dem Arzt deine Nase</button>
+              <button class="rn-exclusive-benefits__tab" data-tab="ratenzahlung">Flexible Ratenzahlung</button>
+              <button class="rn-exclusive-benefits__tab" data-tab="inklusive">Alles inklusive</button>
+              <button class="rn-exclusive-benefits__tab" data-tab="garantie">Profitiere von einer deutschen Garantie</button>
+              <button class="rn-exclusive-benefits__tab" data-tab="seite">Wir bleiben an deiner Seite</button>
+            </div>
+
+            <!-- Right: panels -->
+            <div class="rn-exclusive-benefits__panels">
+
+              <!-- Panel 1 -->
+              <div class="rn-exclusive-benefits__panel active" data-tab="alltagstauglich">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-1.webp" alt="Sofort wieder Alltagstauglich – Vor und nach der OP" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">Schnellere Heilungsphase durch die Ultraschall Piezo Technik</p>
+                  <p class="rn-exclusive-benefits__panel-body">Weniger Schwellungen und Schmerzen – in Ø 7 Tagen nach OP zurück in den Alltag.</p>
+                </div>
+              </div>
+
+              <!-- Panel 2 -->
+              <div class="rn-exclusive-benefits__panel" data-tab="atmung">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-2.webp" alt="Atmung first – Eine Klinik, die Atmung vor Ästhetik stellt" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">Eine Klinik, die Atmung vor Ästhetik stellt</p>
+                  <p class="rn-exclusive-benefits__panel-body">Behandelt von spezialisierten HNO Ärzten.</p>
+                </div>
+              </div>
+
+              <!-- Panel 3 -->
+              <div class="rn-exclusive-benefits__panel" data-tab="arzt">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-3.webp" alt="3D Simulation – Arzt bespricht Nase mit Patient" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">3D Simulation vor Ort</p>
+                  <p class="rn-exclusive-benefits__panel-body">Erst wenn du mit der Simulation zufrieden bist, wird deine Nase operiert.</p>
+                </div>
+              </div>
+
+              <!-- Panel 4 -->
+              <div class="rn-exclusive-benefits__panel" data-tab="ratenzahlung">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-4.svg" alt="Preisvergleich – Rhinomedica vs. andere Kliniken" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">Mit Anzahlung starten, den Rest flexibel zahlen</p>
+                  <p class="rn-exclusive-benefits__panel-body">Du startest mit einer Anzahlung und zahlst den Rest in flexiblen, auf Wunsch zinsfreien Raten.</p>
+                </div>
+              </div>
+
+              <!-- Panel 5 -->
+              <div class="rn-exclusive-benefits__panel" data-tab="inklusive">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-5.webp" alt="Alles inklusive – Hotel, Transfer, Dolmetscher" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">Hotel, Transfer, Dolmetscher</p>
+                  <p class="rn-exclusive-benefits__panel-body">Du brauchst keine Türkischkenntnisse – wir begleiten dich.</p>
+                </div>
+              </div>
+
+              <!-- Panel 6 -->
+              <div class="rn-exclusive-benefits__panel" data-tab="garantie">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-6.webp" alt="Deutsche Garantie – Rhinomedica" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">Zertifiziert und garantiert nach deutschen Standards</p>
+                  <p class="rn-exclusive-benefits__panel-body">Deine Behandlung ist durch unsere deutsche Niederlassung abgesichert.</p>
+                </div>
+              </div>
+
+              <!-- Panel 7 -->
+              <div class="rn-exclusive-benefits__panel" data-tab="seite">
+                <div class="rn-exclusive-benefits__panel-img">
+                  <picture>
+                    <img src="<?= $assets ?>images/USP-7.webp" alt="Lebenslange Ansprechpartner aus Deutschland" loading="lazy">
+                  </picture>
+                </div>
+                <div class="rn-exclusive-benefits__panel-text">
+                  <p class="rn-exclusive-benefits__panel-headline">Lebenslange Ansprechpartner aus Deutschland</p>
+                  <p class="rn-exclusive-benefits__panel-body">Vor, während und nach deiner Behandlung.</p>
+                </div>
+              </div>
+
+            </div>
+            <!-- / panels -->
+
+          </div>
+          <!-- / layout -->
+
+          <!-- ACCORDION layout (mobile only) -->
+          <div class="rn-exclusive-benefits__accordion">
+
+            <div class="rn-exclusive-benefits__acc-item active">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="true">
+                <span>Sofort wieder Alltagstauglich</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-1.webp" alt="Sofort wieder Alltagstauglich – Vor und nach der OP" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">Schnellere Heilungsphase durch die Ultraschall Piezo Technik</p>
+                <p class="rn-exclusive-benefits__panel-body">Weniger Schwellungen und Schmerzen – in Ø 7 Tagen nach OP zurück in den Alltag.</p>
+              </div>
+            </div>
+
+            <div class="rn-exclusive-benefits__acc-item">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="false">
+                <span>Atmung first</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-2.webp" alt="Atmung first – Eine Klinik, die Atmung vor Ästhetik stellt" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">Eine Klinik, die Atmung vor Ästhetik stellt</p>
+                <p class="rn-exclusive-benefits__panel-body">Behandelt von spezialisierten HNO Ärzten.</p>
+              </div>
+            </div>
+
+            <div class="rn-exclusive-benefits__acc-item">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="false">
+                <span>Besprich gemeinsam mit dem Arzt deine Nase</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-3.webp" alt="3D Simulation – Arzt bespricht Nase mit Patient" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">3D Simulation vor Ort</p>
+                <p class="rn-exclusive-benefits__panel-body">Erst wenn du mit der Simulation zufrieden bist, wird deine Nase operiert.</p>
+              </div>
+            </div>
+
+            <div class="rn-exclusive-benefits__acc-item">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="false">
+                <span>Flexible Ratenzahlung</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-4.svg" alt="Preisvergleich – Rhinomedica vs. andere Kliniken" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">Mit Anzahlung starten, den Rest flexibel zahlen</p>
+                <p class="rn-exclusive-benefits__panel-body">Du startest mit einer Anzahlung und zahlst den Rest in flexiblen, auf Wunsch zinsfreien Raten.</p>
+              </div>
+            </div>
+
+            <div class="rn-exclusive-benefits__acc-item">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="false">
+                <span>Alles inklusive</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-5.webp" alt="Alles inklusive – Hotel, Transfer, Dolmetscher" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">Hotel, Transfer, Dolmetscher</p>
+                <p class="rn-exclusive-benefits__panel-body">Du brauchst keine Türkischkenntnisse – wir begleiten dich.</p>
+              </div>
+            </div>
+
+            <div class="rn-exclusive-benefits__acc-item">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="false">
+                <span>Profitiere von einer deutschen Garantie</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-6.webp" alt="Deutsche Garantie – Rhinomedica" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">Zertifiziert und garantiert nach deutschen Standards</p>
+                <p class="rn-exclusive-benefits__panel-body">Deine Behandlung ist durch unsere deutsche Niederlassung abgesichert.</p>
+              </div>
+            </div>
+
+            <div class="rn-exclusive-benefits__acc-item">
+              <button class="rn-exclusive-benefits__acc-trigger" aria-expanded="false">
+                <span>Wir bleiben an deiner Seite</span>
+                <svg class="rn-exclusive-benefits__acc-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="rn-exclusive-benefits__acc-body">
+                <picture><img src="<?= $assets ?>images/USP-7.webp" alt="Lebenslange Ansprechpartner aus Deutschland" loading="lazy"></picture>
+                <p class="rn-exclusive-benefits__panel-headline">Lebenslange Ansprechpartner aus Deutschland</p>
+                <p class="rn-exclusive-benefits__panel-body">Vor, während und nach deiner Behandlung.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- / accordion -->
+
+        </div>
+      </section>
+      <!-- / rn-exclusive-benefits -->
+
+      <section class="rn-next-steps">
+        <div class="container">
+          <h2 class="rn-next-steps__title">
+            Lass uns über <em>deine Nase</em> sprechen
+          </h2>
+          <div class="rn-next-steps__inner">
+            <div class="rn-next-steps__content">
+              <div class="rn-next-steps__text">
+                <p>Du entscheidest dich für eine Behandlung?</p>
+                <p class="rn-next-steps__highlight">Wir organisieren deine Reise!</p>
+              </div>
+              <div class="btns-wrp">
+                <div class="btn-item">
+                  <a href="<?= $cta_url ?>" class="btn btn--black">
+                    Angebot anfordern
+                  </a>
+                  <span>( kostenlos &amp; unverbindlich )</span>
+                </div>
+              </div>
+            </div>
+            <div class="rn-next-steps__steps">
+              <p class="rn-next-steps__subtitle">So geht es für dich weiter</p>
+              <div class="rn-next-steps__cards">
+                <div class="rn-next-steps__card">
+                  <div class="rn-next-steps__card-img">
+                    <img src="assets/images/s1.webp" alt="Fotos hochladen – Lade 4 Fotos deiner Nase hoch" loading="lazy" />
+                  </div>
+                  <div class="rn-next-steps__card-label">
+                    <span class="rn-next-steps__card-number">1</span>
+                    <p>Fotos hochladen</p>
+                  </div>
+                </div>
+                <div class="rn-next-steps__card">
+                  <div class="rn-next-steps__card-img">
+                    <img src="assets/images/s2.webp" alt="Eignung durch Experten erfahren – Beratung per Videoanruf" loading="lazy" />
+                  </div>
+                  <div class="rn-next-steps__card-label">
+                    <span class="rn-next-steps__card-number">2</span>
+                    <p>Eignung durch Experten erfahren</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rn-faq">
+        <div class="container">
+          <h2 class="rn-faq__title">FAQ</h2>
+          <div class="rn-faq__list">
+            <details class="rn-faq__item accordion__item" open>
+              <summary class="rn-faq__question accordion__quesion">
+                Bin ich ein geeigneter Kandidat für eine Nasenkorrektur?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>
+                  Ein geeigneter Kandidat für eine Nasenkorrektur mit der
+                  <em>Ultraschall-Piezo-Methode</em>
+                  ist jede Person, die mit der Form oder Funktion ihrer Nase
+                  unzufrieden ist – sei es aus ästhetischen oder funktionellen
+                  Gründen.
+                </p>
+                <p>
+                  Diese moderne Technik eignet sich besonders für Patient:innen,
+                  die ein <em>präzises, gewebeschonendes Ergebnis</em> wünschen.
+                </p>
+                <p>
+                  Voraussetzung sind eine gute allgemeine Gesundheit und
+                  realistische Erwartungen an das Resultat.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Was kostet eine Nasenkorrektur bei Rhinomedica?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>
+                  Die Kosten für eine Nasenkorrektur bei Rhinomedica beginnen
+                  <em>ab 3.900 €.</em> Der genaue Preis hängt davon ab, ob es
+                  sich um eine <em>Primäroperation</em> (erste Nasenkorrektur)
+                  oder eine <em>Revisionsoperation</em> (Korrektur einer
+                  Voroperation) handelt.
+                </p>
+                <p>
+                  Da jede Nase individuell ist, wird der endgültige Preis nach
+                  der ärztlichen Beurteilung festgelegt.
+                </p>
+                <p>
+                  In unserem Angebot sind alle Leistungen enthalten – von der
+                  Voruntersuchung und Operation bis zur Nachsorge und Betreuung
+                  in Istanbul.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Wie lange dauert die Heilungsphase nach der Nasenkorrektur?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>
+                  Die anfängliche Heilungsphase dauert etwa 1 bis 2 Wochen. In
+                  dieser Zeit sind leichte Schwellungen und Blutergüsse normal,
+                  die allmählich abklingen.
+                </p>
+                <p>
+                  Das endgültige Ergebnis zeigt sich nach rund 6 bis 12 Monaten,
+                  sobald alle inneren Schwellungen vollständig abgeklungen sind
+                  und sich die Nase an ihre neue Form angepasst hat.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Wird die Nasenkorrektur Narben hinterlassen?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>
+                  Dank der <em>Ultraschall-Piezo-Technologie</em> arbeiten
+                  unsere Chirurgen besonders präzise und gewebeschonend.
+                </p>
+                <p>
+                  Die Schnitte werden äußerst fein gesetzt – sichtbare Narben
+                  entstehen in der Regel nicht. Sollte in Einzelfällen ein
+                  kleiner äußerer Schnitt notwendig sein, verheilt dieser meist
+                  unauffällig und ist später kaum sichtbar.
+                </p>
+                <p>
+                  Ziel der Methode ist immer ein natürliches Ergebnis ohne
+                  sichtbare Spuren.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Wie lange soll ich in Istanbul bleiben?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>
+                  Der Aufenthalt bei Rhinomedica dauert in der Regel 7 Tage. So
+                  ist ausreichend Zeit für die Operation, die ersten
+                  Kontrolluntersuchungen und die sichere Entfernung des Gipses,
+                  bevor Sie zurückreisen.
+                </p>
+                <p>
+                  Während Ihres Aufenthalts kümmert sich das Rhinomedica-Team um
+                  alle organisatorischen Details – von der Unterkunft bis zu den
+                  Transfers – damit Sie sich voll und ganz auf Ihre Erholung
+                  konzentrieren können.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Kann ich die Behandlung in Raten zahlen?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>Ja, das ist möglich.</p>
+                <p>
+                  Du leistest eine Anzahlung, und den restlichen Betrag kannst
+                  du ganz bequem auf bis zu 12 Monate aufteilen.
+                </p>
+                <p>
+                  Die genauen Konditionen erklärt dir unser Team transparent im
+                  Beratungsgespräch.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Wann erhalte ich meinen genauen Preis?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>
+                  Die ärztliche Analyse deiner Fotos findet vorab durch unsere
+                  Fachärzte statt.
+                </p>
+                <p>
+                  Im telefonischen Gespräch bespricht ein deutschsprachiger
+                  Experte anschließend die gesamte Behandlung mit dir –
+                  inklusive deines individuellen Preises.
+                </p>
+              </div>
+            </details>
+            <details class="rn-faq__item accordion__item">
+              <summary class="rn-faq__question accordion__quesion">
+                Was passiert, wenn ich nach der OP noch Fragen habe?
+                <span class="rn-faq__icon">
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.75 0.75L6.75 6.75L0.75 0.749999"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </summary>
+              <div class="rn-faq__answer accordion__answer">
+                <p>Du bist nach der OP nicht allein.</p>
+                <p>
+                  Unser deutschsprachiges Patiententeam begleitet dich vor,
+                  während und nach deiner Operation.
+                </p>
+                <p>
+                  Wenn du Fragen hast – egal ob zur Heilung, Pflege oder
+                  Unsicherheiten – kannst du dich jederzeit melden.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="rn-footer">
+      <div class="rn-footer__container container">
+        <div class="rn-footer__social">
+          <img
+            loading="lazy"
+            width="235"
+            height="76"
+            src="https://lp.rhinomedica.de/wp-content/uploads/2026/01/logo-color.svg"
+            alt=""
+            class="rn-footer__logo"
+          />
+
+          <ul class="rn-footer__social-list" style="display: none">
+            <li>
+              <span
+                class="rn-footer__social-icon rn-footer__social-icon--facebook"
+                ><a href="" target="_blank"></a
+              ></span>
+            </li>
+            <li>
+              <span class="rn-footer__social-icon rn-footer__social-icon--insta"
+                ><a href="" target="_blank"></a
+              ></span>
+            </li>
+            <li>
+              <span
+                class="rn-footer__social-icon rn-footer__social-icon--youtube"
+                ><a href="" target="_blank"></a
+              ></span>
+            </li>
+            <li>
+              <span
+                class="rn-footer__social-icon rn-footer__social-icon--tiktok"
+                ><a href="" target="_blank"></a
+              ></span>
+            </li>
+          </ul>
+        </div>
+        <div class="rn-footer__contact footer-col">
+          <ul>
+            <li>
+              <a
+                class="rn-footer__tel with-footer-icon"
+                href="tel:+4915792643777"
+                >+49 1579 2643777</a
+              >
+            </li>
+            <li>
+              <a
+                class="rn-footer__email with-footer-icon"
+                href="mailto:info@rhinomedica.de"
+                >info@rhinomedica.de</a
+              >
+            </li>
+            <li>
+              <a class="rn-footer__contact-location with-footer-icon" href=">"
+                >34475 Vadi Istanbul No:103 D:1 T4 Blok</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="rn-footer__links footer-col">
+          <ul>
+            <li>
+              <a href="https://rhinomedica.de/impressum/">Impressum</a>
+            </li>
+            <li>
+              <a href="https://rhinomedica.de/datenschutz/">Datenschutz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script defer src="assets/js/embla-carousel.umd.js"></script>
+    <script defer src="assets/js/custom.js"></script>
+    <?php wp_footer(); ?>
+  </body>
+</html>

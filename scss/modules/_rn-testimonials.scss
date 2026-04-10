@@ -1,0 +1,326 @@
+.rn-testimonials {
+  background-color: #0f172a;
+  padding: 6rem 0;
+  @include lg-up{
+    padding: 10rem 0 7rem;
+  }
+  overflow: hidden;
+  .test-nav{
+    display: flex;
+    flex-direction: column;
+    @include md-up {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .btns-wrp{
+    @include md-up{
+      padding-top: 1rem;
+    }
+    .btn-item{
+      .btn{
+        color: var(--Black);
+        span{
+          color: var(--Black);
+        }
+      }
+    }
+  }
+  
+
+  &__header {
+    margin-bottom: 3.2rem;
+    text-align: left;
+    @include md{
+      padding-right: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 0.8rem;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffbd86;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+
+  &__slider {
+    position: relative;
+  }
+.container{
+  @include md{
+    margin-left: auto;
+    margin-right: 0;
+    width: min(100% - 2rem, 128.3rem);
+  }
+}
+  &__card {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    aspect-ratio: 309/610;
+    cursor: pointer;
+    background-color: #1e293b;
+
+    &.active {
+      .rn-testimonials__poster,
+      .rn-testimonials__card-header,
+      .rn-testimonials__play-btn,
+      .rn-testimonials__overlay,
+      .rn-testimonials__quote {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .rn-custom-vimeo__iframe-wrp {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  &__card-header {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  &__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+  }
+
+  &__name {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+
+    img {
+      width: 6.3rem;
+      height: 6.3rem;
+    }
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, #9e5d37 0%, transparent 100%);
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  &__quote {
+    position: absolute;
+    bottom: 2rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff5eb;
+    line-height: 1.4;
+    margin: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  .embla__buttons {
+    display: flex;
+    margin-right: auto;
+    margin-left: 0;
+    justify-content: flex-start;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+  }
+
+  .embla__button {
+    width: 5rem;
+    height: 4.8rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.is-disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    svg {
+      width: 1.9rem;
+      height: auto;
+      @include lg-up {
+        width: 5rem;
+        height: auto;
+      }
+
+      &.desktop {
+        display: none;
+        @include lg-up {
+          display: block;
+        }
+      }
+
+      &.mobile {
+        display: block;
+        @include lg-up {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .btns-wrp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include md-up{
+      justify-content: flex-end;
+    }
+     .btn{
+       color: #002989;
+     }
+  }
+
+  .rn-custom-vimeo__iframe-wrp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .rn-testimonials {
+
+    &__header {
+      margin-bottom: 4rem;
+    }
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .rn-testimonials {
+    &__header {
+      margin-bottom: 4.8rem;
+    }
+
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__subtitle {
+      font-size: 2rem;
+    }
+
+    &__card {
+      border-radius: 2rem;
+    }
+
+    &__card-header {
+      top: 2rem;
+      left: 2rem;
+    }
+
+    &__avatar {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+
+    &__name {
+      font-size: 1.8rem;
+    }
+
+    &__play-btn {
+      img {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+
+    &__quote {
+      font-size: 1.6rem;
+      bottom: 2.4rem;
+      left: 2rem;
+      right: 2rem;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      margin-top: 3.2rem;
+
+    }
+
+    .btns-wrp {
+     align-items: center;
+    }
+  }
+
+}

@@ -1,0 +1,250 @@
+.rn-hero {
+  position: relative;
+  background-color: var(--Black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @include lg-up {
+    min-height: 100vh;
+    padding-bottom: 8rem;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 32.3rem;
+
+    @include md-up {
+      height: 52rem;
+    }
+
+    @include lg-up {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: 10;
+      height: 100%;
+    }
+
+    picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+    }
+  }
+
+  &__sticker {
+    position: absolute;
+    bottom: -5.5rem;
+    right: 2rem;
+    width: 15rem;
+    height: 15rem;
+    z-index: 11;
+
+    @include md-up {
+      bottom: -4rem;
+      right: 8rem;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    @include lg-up {
+      left: -10rem;
+      right: auto;
+      top: 70%;
+      transform: translateY(-50%);
+      width: 22rem;
+      height: 22rem;
+    }
+
+    @include xl-up {
+      left: -13rem;
+      right: auto;
+      top: 70%;
+      transform: translateY(-50%);
+      width: 26rem;
+      height: 26rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding-block: 2rem 3rem;
+
+    @include md-up {
+      padding-block: 4rem 4rem;
+    }
+
+    @include lg-up {
+      padding-block: 0;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include md-up {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 4rem;
+    }
+
+    @include lg-up {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3.2rem;
+      max-width: 50%;
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--Secondary-3);
+    font-family: var(--font-text);
+    margin: 0;
+    max-width: 36rem;
+
+    @include md-up {
+      flex: 1;
+      max-width: 38rem;
+    }
+
+    @include lg-up {
+      font-size: clamp(5rem, 5vw + 1rem, 7.2rem);
+      max-width: none;
+      padding-top: 5rem;
+    }
+
+    .highlight-italic {
+      color: var(--Secondary);
+      font-style: italic;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include md-up {
+      flex: 1;
+      max-width: 38rem;
+      gap: 2rem;
+    }
+
+    @include lg-up {
+      max-width: none;
+      gap: 3.2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--Secondary-3);
+    line-height: 1.4;
+    margin: 0;
+    max-width: 27rem;
+
+    @include md-up {
+      font-size: 2.4rem;
+      max-width: 100%;
+    }
+
+    @include lg-up {
+      font-size: 3.2rem;
+      max-width: 38rem;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    .highlight-peach {
+      color: var(--Secondary);
+    }
+  }
+
+  &__btn-item {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+
+    @include md-up {
+      gap: 0.8rem;
+    }
+  }
+
+  .btn--hero {
+    background-color: var(--Secondary);
+    color: var(--Black);
+    border: none;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 1.2rem 2rem;
+    height: 4.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border-radius: 10.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    @include md-up {
+      font-size: 2rem;
+      height: 5.2rem;
+      padding: 1.2rem 2.4rem;
+    }
+
+    @include lg-up {
+      height: 5.6rem;
+      padding: 1.2rem 3.2rem;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__btn-note {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--Secondary-3);
+    text-align: center;
+    width: 100%;
+
+    @include md-up {
+      font-size: 1.4rem;
+    }
+  }
+}

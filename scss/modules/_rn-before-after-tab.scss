@@ -1,0 +1,176 @@
+@import "../mixins/mixins-master";
+
+.rn-before-after-tab {
+  padding-block: var(--block-gap);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    @include md-up {
+      gap: 4.8rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    @include md-up {
+      gap: 1.6rem;
+    }
+  }
+
+  &__title {
+    font-size: var(--h2_font-size);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--Black);
+
+    .highlight-brown {
+      color: var(--Secondary-2);
+      font-style: italic;
+    }
+  }
+
+  &__subtitle {
+    font-size: var(--body-font);
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--Black);
+  }
+
+  &__tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__tabs-nav {
+    display: flex;
+    position: relative;
+    border-bottom: 6px solid #ccbbab;
+  }
+
+  &__tab-btn {
+    flex: 1;
+    text-align: center;
+    padding: 1.6rem 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ccbbab;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+
+    @include lg-up {
+      font-size: 3.6rem;
+    }
+
+    &.active {
+      color: var(--Secondary-2);
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px; // To cover the container border
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background-color: var(--Secondary-2);
+      }
+    }
+  }
+
+  &__panels {
+    position: relative;
+  }
+
+  &__panel {
+    display: none;
+    animation: fadeIn 0.4s ease;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    @include md-up {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @include lg-up {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3.2rem;
+    }
+  }
+
+  &__item {
+    background-color: #040404;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--Secondary); // #ffbd86
+    padding: 1.5rem 1.6rem;
+
+    @include lg-up {
+      font-size: clamp(1.4rem, 1.3vw, 2.2rem);
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: row; // Mobile: Side by Side
+
+    img {
+      width: 50%;
+      object-fit: cover;
+      aspect-ratio: 175/122; // Approximately based on mobile design
+      display: block;
+      @include md-up {
+        aspect-ratio: 337/236; // Approximately based on mobile design
+      }
+
+      @include lg-up {
+        width: 100%;
+        aspect-ratio: 328/228; // desktop
+      }
+    }
+
+    @include lg-up {
+      flex-direction: column; // Desktop: Stacked vertically
+    }
+  }
+
+  &__cta {
+    margin-top: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,269 @@
+@import "../mixins/mixins-master";
+
+// rem scale: 1rem = 10px (html font-size: 62.5%)
+
+.rn-next-steps {
+  background-color: var(--Secondary-3);
+  padding-block: 4rem; // mobile: 40px
+
+  @include md-up {
+    padding-block: 6rem; // tablet: 60px
+  }
+
+  @include lg-up {
+    padding-block: 8rem; // desktop: 80px
+  }
+
+  .container {
+    @include lg-up {
+      display: grid;
+      grid-template-columns: 40rem 1fr; // left col fixed 450px, right takes rest
+      grid-template-rows: auto 1fr;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      align-items: center;
+    }
+    @include xl-up {
+        grid-template-columns: 45rem 1fr;
+    }
+  }
+
+  // Title — top of stack on mobile/tablet; grid row 1 col 1 on desktop
+  &__title {
+    font-family: var(--font-text);
+    font-weight: 700;
+    font-size: 3rem; // mobile: 30px
+    line-height: 1.2;
+    color: var(--Black);
+    margin-bottom: 2rem;
+
+    em {
+      font-style: italic;
+      color: var(--Secondary-2);
+    }
+
+    @include md-up {
+      font-size: 3.2rem; // tablet: 32px
+      margin-bottom: 1.5rem;
+    }
+
+    @include lg-up {
+      font-size: 4rem; // desktop: 40px
+      margin-bottom: 0;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  // Inner — on desktop becomes display:contents so children join the grid
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; // mobile: 20px
+
+    @include md-up {
+      gap: 2.4rem; // tablet: 24px
+    }
+
+    @include lg-up {
+      display: contents;
+    }
+  }
+
+  // Steps — right column on desktop; appears before content on mobile/tablet via order:-1
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; // mobile: 8px
+    order: -1;
+
+    @include md-up {
+      gap: 1.6rem; // tablet: 16px
+    }
+
+    @include lg-up {
+      order: unset;
+      gap: 2rem; // desktop: 20px
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+  }
+
+  // Content — text + CTA; desktop: grid row 2 col 1
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; // mobile: 20px
+
+    @include md-up {
+      gap: 2.4rem; // tablet: 24px
+    }
+
+    @include lg-up {
+      gap: 3.2rem; // desktop: 32px
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; // 4px
+
+    p {
+      font-family: var(--font-text);
+      font-weight: 400;
+      font-size: 1.6rem; // mobile: 16px
+      line-height: 1.4;
+      color: var(--Black);
+
+      @include md-up {
+        font-size: 1.8rem; // tablet: 18px
+      }
+
+      @include lg-up {
+        font-size: 2rem; // desktop: 20px
+      }
+    }
+  }
+
+  &__highlight {
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: var(--Primary) !important;
+    font-size: 1.8rem !important; // mobile: 18px
+    line-height: 1.2 !important;
+
+    @include md-up {
+      font-size: 2rem !important; // tablet: 20px
+    }
+
+    @include lg-up {
+      font-size: 2.4rem !important; // desktop: 24px
+    }
+  }
+
+  &__subtitle {
+    font-family: var(--font-text);
+    font-weight: 700;
+    font-size: 2rem; // mobile + tablet: 20px
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--Primary);
+
+    @include lg-up {
+      font-size: 2.4rem; // desktop: 24px
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem; // mobile: 16px
+
+    @include md-up {
+      flex-direction: row;
+      gap: 2.4rem; // tablet: 24px
+    }
+
+    @include lg-up {
+      gap: 3.2rem; // desktop: 32px
+    }
+  }
+
+  &__card {
+    background-color: var(--Secondary);
+    border-radius: 1.6rem; // 16px
+    padding: 1.6rem; // mobile: 16px
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; // 12px
+
+    @include md-up {
+      flex: 1;
+      padding: 2.4rem; // tablet: 24px
+    }
+
+    @include lg-up {
+      flex: 1;
+      padding: 1.5rem;
+    //   padding: 3.2rem; // desktop: 32px
+    }
+
+    @include xl-up {
+      padding: 3.2rem; // desktop: 32px
+    }
+  }
+
+  &__card-img {
+    border-radius: 1.2rem; // mobile: 12px
+    overflow: hidden;
+    aspect-ratio: 16 / 10; // fluid — grows/shrinks with container width
+
+    @include md-up {
+      border-radius: 1.45rem; // ~14.5px
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__card-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; // mobile: 8px
+
+    @include md-up {
+      gap: 1rem; // tablet/desktop: 10px
+    }
+
+    p {
+      font-family: var(--font-text);
+      font-weight: 400;
+      font-size: 1.6rem; // mobile: 16px / regular
+      line-height: 1.4;
+      color: var(--Black);
+
+      @include md-up {
+        font-weight: 600;
+        font-size: 1.8rem; // tablet: 18px / semibold
+        line-height: 1.2;
+      }
+      @include lg-up {
+        font-size: 1.5rem; // desktop: 20px / semibold
+      }
+
+      @include xl-up {
+        font-size: 2rem; // desktop: 20px / semibold
+      }
+    }
+  }
+
+  &__card-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.4rem; // mobile: 24px
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: var(--Secondary-3);
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 1.4rem; // mobile: 14px
+    line-height: 1.3;
+    color: var(--Black);
+
+    @include md-up {
+      width: 3.2rem; // tablet/desktop: 32px
+      height: 3.2rem;
+      font-size: 1.867rem; // ~18.667px
+      background-color: rgba(255, 245, 235, 0.8);
+    }
+  }
+}

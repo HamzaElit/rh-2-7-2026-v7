@@ -1,0 +1,122 @@
+@import "../mixins/mixins-master";
+
+.rn-promo-banner {
+  background-color: var(--Secondary);
+  padding-block: 2.5rem;
+
+  @include md-up {
+    padding-block: 3.75rem;
+  }
+
+  @include lg-up {
+    padding-block: 5rem;
+  }
+
+  .container {
+    width: min(calc(100% - 4rem), 140rem);
+  }
+
+  &__inner {
+    display: grid;
+    gap: 2rem;
+
+    @include md-up {
+      gap: 1.5rem;
+    }
+
+    @include lg-up {
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto 1fr;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--Black);
+    font-family: var(--font-text);
+
+    @include md-up {
+      font-size: var(--h2_font-size-sm);
+    }
+
+    @include lg-up {
+      font-size: var(--h2_font-size-md);
+      white-space: nowrap;
+      grid-column: 1;
+      grid-row: 1;
+      align-self: end;
+    }
+  }
+
+  &__cta {
+    justify-content: flex-start;
+
+    @include lg-up {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: start;
+    }
+  }
+
+  &__features {
+    background-color: var(--Secondary-3);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+
+    @include md-up {
+      padding: 1.5rem;
+    }
+
+    @include lg-up {
+      padding: 2rem;
+      gap: 1.125rem;
+      grid-column: 2;
+      grid-row: 1 / 3;
+      align-self: center;
+    }
+  }
+
+  &__feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    @include md-up {
+      gap: 0.625rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--Primary);
+      font-family: var(--font-text);
+
+      @include md-up {
+        font-size: 1.8rem;
+      }
+
+      @include lg-up {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+
+    @include md-up {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
