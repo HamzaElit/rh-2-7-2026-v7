@@ -38,15 +38,16 @@
     color: #ffffff;
     margin: 0 0 0.8rem;
     line-height: 1.2;
+    strong{
+      color: var(--Secondary);
+      font-style: italic;
+    }
   }
 
   &__subtitle {
-    font-family: 'Instrument Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
-    color: #ffbd86;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--Secondary-3);
     margin: 0;
   }
 
