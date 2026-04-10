@@ -116,7 +116,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 3.2rem;
-      max-width: 50%;
+      max-width: 48%;
     }
   }
 
@@ -135,7 +135,7 @@
     }
 
     @include lg-up {
-      font-size: clamp(5rem, 5vw + 1rem, 7.2rem);
+      font-size: clamp(5rem, 3.5vw + 1rem, 7.2rem);
       max-width: none;
       padding-top: 5rem;
     }
@@ -177,7 +177,7 @@
     }
 
     @include lg-up {
-      font-size: 3.2rem;
+      font-size: clamp(3rem, 2.5vw, 3.2rem);
       max-width: 38rem;
     }
 

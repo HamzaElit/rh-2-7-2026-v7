@@ -31,9 +31,9 @@ section {
   // width: min(calc(100% - 4rem), 50rem);
   width: min(calc(100% - 4rem), 140rem);
 
-  // @include lg-up {
-  //   width: min(calc(100% - 4rem), 128.3rem);
-  // }
+  @include md-up {
+    width: min(calc(100% - 16rem), 140rem);
+  }
   margin: auto;
 }
 
@@ -49,7 +49,6 @@ section {
 
 .btns-wrp {
   display: flex;
-  justify-content: center; // Mobile alignment first
   width: 100%;
 
   @include md-up {

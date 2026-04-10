@@ -12,10 +12,6 @@
     padding-block: 5rem;
   }
 
-  .container {
-    width: min(calc(100% - 4rem), 140rem);
-  }
-
   &__inner {
     display: grid;
     gap: 2rem;
@@ -25,7 +21,7 @@
     }
 
     @include lg-up {
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto 1fr;
       align-items: center;
       gap: 2.5rem;
@@ -45,7 +41,6 @@
 
     @include lg-up {
       font-size: var(--h2_font-size-md);
-      white-space: nowrap;
       grid-column: 1;
       grid-row: 1;
       align-self: end;
