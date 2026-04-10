@@ -34,8 +34,7 @@
     @include md-up {
       display: flex;
       gap: 1.6rem;
-      align-items: flex-start;
-    }
+        }
 
     @include lg-up {
       gap: 3.2rem;
@@ -47,7 +46,7 @@
     flex-direction: column;
     gap: 1.6rem;
     flex-shrink: 0;
-    flex: 0 0 50%;
+    flex: 0 0 51%;
     @include lg-up {
       flex: 0 0 40.5%;
       width: 56.8rem;
@@ -87,6 +86,7 @@
 
   // ── Panels ─────────────────────────────────────────────────────────────────
   &__panels {
+    min-height: 100%;
     flex: 1 1 0;
     min-width: 0;
   }
@@ -94,9 +94,13 @@
   &__panel {
     display: none;
     background-color: var(--Black);
-    border-radius: 2rem;
+    border-radius: 0.8rem;
     overflow: hidden;
     animation: ebFadeIn 0.35s ease;
+    min-height: 100%;
+    @include lg-up{
+        border-radius: 2rem;
+    }
 
     &.active {
       display: flex;
